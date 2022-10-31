@@ -36,5 +36,15 @@ namespace _111_1MID {
                 btn_Submit.Visible = true;
             }
         }
+        protected void btn_Submit_Click(object sender, EventArgs e)
+        {
+            pl_Msg.Visible = true;
+            lb_Msg.Text = (lb_Type.Text + "<br />" + tb_Account.Text + "先生/小姐，已完成掛號。" + "<br />");
+            if (tb_Email.Text != "") ;
+            {
+                lb_Msg.Text += ("已寄信至信箱" + tb_Email.Text);
+            }
+
+        }
     }
 }
