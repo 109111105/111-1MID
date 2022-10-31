@@ -17,6 +17,7 @@
             <asp:RadioButtonList ID="rbl_Phone" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
                 <asp:ListItem Text="手機" Selected="True"></asp:ListItem>
                 <asp:ListItem Text="市話"></asp:ListItem>
+                <asp:ListItem Text="無"></asp:ListItem>
             </asp:RadioButtonList><br />
             <asp:TextBox ID="txt_Phone" runat="server"></asp:TextBox><br /><br />
             縣市與區域：

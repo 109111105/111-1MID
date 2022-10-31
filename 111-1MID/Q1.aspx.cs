@@ -12,5 +12,29 @@ namespace _111_1MID {
         protected void Page_Load(object sender, EventArgs e) {
 
         }
+
+        protected void tb_Account_TextChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < s_IdSet.Length; i++)
+            {
+                if (tb_Account.Text == s_IdSet[i])
+                {
+                    lb_Type.Text = "複診";
+                    break;
+                }
+                else
+                {
+                    lb_Type.Text = "初診";
+                }
+            }
+            if (tb_Account.Text == "")
+            {
+                btn_Submit.Visible = false;
+            }
+            else
+            {
+                btn_Submit.Visible = true;
+            }
+        }
     }
 }
